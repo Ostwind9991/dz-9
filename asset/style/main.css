@@ -1,0 +1,82 @@
+@import url(reset.css);
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #000;
+}
+
+.banner {
+    background: url("../upload/baner.jpg") center/cover no-repeat;
+}
+
+.banner_title {
+    font-size: 64px;
+    color: #fff;
+    padding: 63px 10px 139px 50%;
+}
+
+.banner_subtitle {
+    font-size: 48px;
+    font-weight: 400;
+    position: relative;
+    bottom: 15px;
+    right: 42px;
+    text-align: right;
+}
+
+.row_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 48px 0;
+}
+
+.row_img {
+    background: url("../upload/flamigo.jpg") center/cover no-repeat;
+    flex: 1 1 400px;
+    min-width: 450px;
+}
+
+.row_img__title {
+    padding-top: 32px;
+    text-align: center;
+    font-weight: 800;
+    color: #fff;
+    font-size: 48px;
+}
+
+.row_img:hover .row_img__title{
+    color: #1a73b8;
+    background-color: rgba(198, 195, 195, 0.71);
+}
+
+.row_description {
+    flex: 1 1 400px;
+    padding: 64px 48px;
+    box-sizing: border-box;
+    border-bottom: 2px dashed red;
+    border-top: 2px dashed red;
+    background-color: aquamarine;
+}
+
+.row_description__subtitle {
+    color: red;
+    text-align: right;
+    padding-bottom: 32px;
+}
+
+.row_description__title {
+    color: #154708;
+    font-weight: bold;
+    font-size: 48px;
+    text-align: left;
+    padding-bottom: 32px;
+}
+
+.row_description__text {
+    text-align: left;
+}
+
+.wrapper .row_wrapper:nth-child(2) .row_img {
+    order: 2;
+}
